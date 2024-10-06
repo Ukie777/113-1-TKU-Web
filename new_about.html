@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自我介紹</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .info {
+            width: 300px;
+            margin: 20px 0;
+            padding: 15px;
+            border: 2px solid #3498db;
+            background-color: #eef;
+            box-sizing: border-box;
+        }
+        .box-model {
+            width: 350px;
+            height: 150px;
+            margin: 20px 0;
+            padding: 20px;
+            border: 5px solid black;
+            box-sizing: border-box;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        /* 選擇器示範 */
+        .highlight {
+            background-color: yellow; /* 類選擇器 */
+        }
+        #unique {
+            font-weight: bold; /* ID 選擇器 */
+        }
+        p:hover {
+            color: red; /* 虛擬類別選擇器 */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>自我介紹</h1>
+    <div class="info">
+        <p id="unique"><strong>姓名：</strong>黃鈺棋</p>
+        <p><strong>興趣愛好：</strong>喝酒</p>
+        <p><strong>出生地：</strong>高雄</p>
+        <p class="highlight"><strong>學校：</strong>淡江大學 四年級</p>
+        <p><strong>身高：</strong>170 cm</p>
+        <p><strong>體重：</strong>60 kg</p>
+    </div>
+
+    <h2>盒模型</h2>
+    <div class="box-model">!!</div>
+
+</body>
+</html>
+
