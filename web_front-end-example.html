@@ -3,17 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>自我介紹作業</title>
-    
+    <title>自我介紹</title>
+
+    <!-- 引入本地 style.css -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- 引入遠端 Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
     <style>
         body {
+            background-color: linen;
             font-family: Arial, sans-serif;
             line-height: 1.6;
             margin: 20px;
-            background-color: #f9f9f9;
         }
         h1 {
-            color: #2c3e50; /* 深藍色 */
+            color: maroon;
+            margin-left: 40px;
         }
         .tag {
             display: inline-block;
@@ -23,18 +31,28 @@
             border-radius: 5px;
             margin: 5px;
         }
+        /* 選擇器示範 */
+        .highlight {
+            background-color: yellow; /* 類選擇器 */
+        }
+        #student-name {
+            font-weight: bold; /* ID 選擇器 */
+        }
+        h2:hover {
+            color: red; /* 虛擬類別選擇器 */
+        }
     </style>
 </head>
 <body>
 
     <h1>自我介紹作業</h1>
     
-    <h2>學生姓名：黃鈺棋</h2>
+    <h2 id="student-name">學生姓名：黃鈺棋</h2>
     <h2>學號：<span class="tag">410631633</span></h2>
     <h2>提交日期：日期</h2>
 
     <h2>自我介紹</h2>
-    <p>我來自高雄，目前就讀淡江大學大四，期待能準時畢業。</p>
+    <p class="highlight">我來自高雄，目前就讀淡江大學大四，期待能準時畢業。</p>
 
     <h2>願景</h2>
     <p>希望在學業和未來的工作中都能表現優異。</p>
